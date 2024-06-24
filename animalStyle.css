@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.navigation a:hover, .navigation a.active{
+    background: #359381;
+    color:#f9f9f9;
+}
+.parallax{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(0,0,0, 0.2);
+}
+.parallax img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: -100;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.image img{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card{
+    width: 350px;
+    height: 500px;
+    background: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0, .5);
+}
+.card .card-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.card-content .animal-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.animal{
+    font-size: 48px;
+    font-weight: 600;
+}
+.sci-name{
+    font-size: 22px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    padding-bottom: 100px;
+}
+.learn-btn{
+    width: 100%;
+    background: #359381;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0, .3);
+}
+.learn-btn button{
+    border-radius: 10px;
+    width: 100%;
+    height: 45px;
+    background: #359381;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
